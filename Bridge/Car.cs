@@ -2,14 +2,28 @@
 {
     public class Car
 	{
+        /// <summary>
+        /// A string of numbers and letters that make up a liscenseplate
+        /// </summary>
         public string Licenseplate { get; set; }
+        /// <summary>
+        /// A date and time, used for time based functions like weekend discounts
+        /// </summary>
         public DateTime Date { get; set; }
 
+        /// <summary>
+        /// A method that can be overwritten to add mathematical functions such as discounts
+        /// </summary>
+        /// <returns>Price as a double</returns>
         public double Price()
         {
             return 230;
         }
 
+        /// <summary>
+        /// A description of the vehicles type, such as car, truck, or motorcycle
+        /// </summary>
+        /// <returns>Vehicle type as a string</returns>
         public string VehicleType()
         {
             return "Car";
