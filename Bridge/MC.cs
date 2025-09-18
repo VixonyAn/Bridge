@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Bridge
 {
-	public class MC
+	public class MC : Vehicle
 	{
 		/// <summary>
 		/// A string of numbers and letters that make up a liscenseplate
@@ -18,19 +18,10 @@ namespace Bridge
 		public DateTime Date { get; set; }
 
 		/// <summary>
-		/// A method that can be overwritten to add mathematical functions such as discounts
-		/// </summary>
-		/// <returns>Price as a double</returns>
-		public double Price()
-		{
-			return 120;
-		}
-
-		/// <summary>
 		/// A description of the vehicles type, such as car, truck, or motorcycle
 		/// </summary>
 		/// <returns>Vehicle type as a string</returns>
-		public string VehicleType()
+		public override string VehicleType()
 		{
 			return "MC";
 		}
