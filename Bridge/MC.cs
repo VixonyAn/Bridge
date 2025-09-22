@@ -17,6 +17,13 @@ namespace Bridge
 		/// </summary>
 		public DateTime Date { get; set; }
 
+		public MC() { }
+		public MC(string licenseplate) : base(licenseplate)
+		{
+			Licenseplate = licenseplate;
+		}
+
+
 		/// <summary>
 		/// A description of the vehicles type, such as car, truck, or motorcycle
 		/// </summary>

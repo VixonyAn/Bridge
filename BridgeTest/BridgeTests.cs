@@ -55,5 +55,19 @@ namespace BridgeTest
 			//Assert
 			Assert.AreEqual("MC", vehicleType);
 		}
+
+		[TestMethod]
+		[ExpectedException(typeof(ArgumentException))]
+		public void TestLicenseplateLengthException()
+		{
+			//Arrange
+			Vehicle mc2 = new MC("ABC4567O");
+
+			//Act
+			string licenseplate = mc2.Licenseplate;
+
+			//Assert
+			Assert.Fail();
+		}
 	}
 }

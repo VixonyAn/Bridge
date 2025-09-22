@@ -11,11 +11,17 @@
         /// </summary>
         public DateTime Date { get; set; }
 
-        /// <summary>
-        /// A description of the vehicles type, such as car, truck, or motorcycle
-        /// </summary>
-        /// <returns>Vehicle type as a string</returns>
-        public override string VehicleType()
+		public Car() { }
+		public Car(string licenseplate) : base(licenseplate)
+		{
+			Licenseplate = licenseplate;
+		}
+
+		/// <summary>
+		/// A description of the vehicles type, such as car, truck, or motorcycle
+		/// </summary>
+		/// <returns>Vehicle type as a string</returns>
+		public override string VehicleType()
         {
             return "Car";
         }
