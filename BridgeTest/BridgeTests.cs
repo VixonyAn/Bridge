@@ -4,7 +4,7 @@ namespace BridgeTest
 	[TestClass]
 	public class BridgeTests
 	{
-		#region Test Base Price and Vehicle Type
+		#region Test Base Price and Vehicle Type Car
 		[TestMethod]
 		public void TestBridgePriceCar()
 		{
@@ -30,7 +30,9 @@ namespace BridgeTest
 			//Assert
 			Assert.AreEqual("Car", vehicleType);
 		}
+		#endregion
 
+		#region Test Base Price and Vehicle Type MC
 		[TestMethod]
 		public void TestBridgePriceMC()
 		{
@@ -58,6 +60,7 @@ namespace BridgeTest
 		}
 		#endregion
 
+		#region Test Licenseplate Length Exception
 		[TestMethod]
 		[ExpectedException(typeof(ArgumentException))]
 		public void TestLicenseplateLengthException()
@@ -71,7 +74,9 @@ namespace BridgeTest
 			//Assert
 			Assert.Fail();
 		}
+		#endregion
 
+		#region Test Brobizz
 		[TestMethod]
 		public void TestBrobizzCar()
 		{
@@ -97,5 +102,6 @@ namespace BridgeTest
 			//Assert
 			Assert.AreEqual(108, priceDiscounted);
 		}
+		#endregion
 	}
 }

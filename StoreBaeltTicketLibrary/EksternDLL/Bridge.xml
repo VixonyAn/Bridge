@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bridge</name>
+    </assembly>
+    <members>
+        <member name="P:Bridge.Car.Licenseplate">
+            <summary>
+            A string of numbers and letters that make up a liscenseplate
+            </summary>
+        </member>
+        <member name="P:Bridge.Car.Date">
+            <summary>
+            A date and time, used for time based functions like weekend discounts
+            </summary>
+        </member>
+        <member name="M:Bridge.Car.VehicleType">
+            <summary>
+            A description of the vehicles type, such as car, truck, or motorcycle
+            </summary>
+            <returns>Vehicle type as a string</returns>
+        </member>
+        <member name="P:Bridge.MC.Licenseplate">
+            <summary>
+            A string of numbers and letters that make up a liscenseplate
+            </summary>
+        </member>
+        <member name="P:Bridge.MC.Date">
+            <summary>
+            A date and time, used for time based functions like weekend discounts
+            </summary>
+        </member>
+        <member name="M:Bridge.MC.VehicleType">
+            <summary>
+            A description of the vehicles type, such as car, truck, or motorcycle
+            </summary>
+            <returns>Vehicle type as a string</returns>
+        </member>
+        <member name="P:Bridge.Vehicle.Licenseplate">
+            <summary>
+            A string of numbers and letters that make up a licenseplate
+            </summary>
+        </member>
+        <member name="P:Bridge.Vehicle.Date">
+            <summary>
+            A date and time, used for time based functions like weekend discounts
+            </summary>
+        </member>
+        <member name="M:Bridge.Vehicle.Price(System.Boolean)">
+            <summary>
+            A method that determines and processes discounts to calculate the price to cross the bridge
+            </summary>
+            <returns>Price as a double</returns>
+        </member>
+        <member name="M:Bridge.Vehicle.VehicleType">
+            <summary>
+            A description of the vehicles type, such as car, truck, or motorcycle
+            </summary>
+            <returns>Vehicle type as a string</returns>
+        </member>
+    </members>
+</doc>
