@@ -41,20 +41,7 @@ namespace Bridge
 		/// A method that determines and processes discounts to calculate the price to cross the bridge
 		/// </summary>
 		/// <returns>Price as a double</returns>
-		public virtual double Price(bool brobizz)
-		{
-			if (brobizz)
-			{
-				if ("Car" == VehicleType()) { return 230 * 0.90; }
-				else if ("MC" == VehicleType()) { return 120 * 0.90; }
-			}
-			else
-			{
-				if ("Car" == VehicleType()) { return 230; }
-				else if ("MC" == VehicleType()) { return 120; }
-			}
-			return 0;
-		}
+		public abstract double Price(bool brobizz);
 
 		/// <summary>
 		/// A description of the vehicles type, such as car, truck, or motorcycle

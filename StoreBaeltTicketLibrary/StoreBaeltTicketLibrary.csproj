@@ -10,4 +10,10 @@
     <Folder Include="EksternDLL\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="Bridge">
+      <HintPath>..\Bridge\bin\Debug\net8.0\Bridge.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
