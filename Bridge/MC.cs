@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Bridge
+﻿namespace Bridge
 {
 	public class MC : Vehicle
 	{
+		#region Properties
 		/// <summary>
 		/// A string of numbers and letters that make up a liscenseplate
 		/// </summary>
@@ -16,13 +11,24 @@ namespace Bridge
 		/// A date and time, used for time based functions like weekend discounts
 		/// </summary>
 		public DateTime Date { get; set; }
+		#endregion
 
+		#region Constructors
+		/// <summary>
+		/// An empty constructor for creating a MC
+		/// </summary>
 		public MC() { }
+		/// <summary>
+		/// A contructor for creating a MC, requiring a license plate
+		/// </summary>
+		/// <param name="licenseplate">Licenseplate may not exceed 7 characters</param>
 		public MC(string licenseplate) : base(licenseplate)
 		{
 			Licenseplate = licenseplate;
 		}
+		#endregion
 
+		#region Methods
 		/// <summary>
 		/// A method that determines and processes discounts to calculate the price to cross the bridge
 		/// </summary>
@@ -48,5 +54,6 @@ namespace Bridge
 		{
 			return "MC";
 		}
+		#endregion
 	}
 }

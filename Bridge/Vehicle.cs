@@ -1,17 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Bridge
+﻿namespace Bridge
 {
 	public abstract class Vehicle
 	{
-		#region Instance Fields
-		private string licenseplate;
-		#endregion
-
 		#region Properties
 		/// <summary>
 		/// A string of numbers and letters that make up a licenseplate
@@ -24,7 +14,15 @@ namespace Bridge
 		#endregion
 
 		#region Constructors
+		/// <summary>
+		/// An empty constructor for creating a Vehicle
+		/// </summary>
 		public Vehicle() { }
+		/// <summary>
+		/// A contructor for creating a Vehicle, requiring a license plate
+		/// </summary>
+		/// <param name="licenseplate">Licenseplate may not exceed 7 characters</param>
+		/// <exception cref="ArgumentException">Licenseplate may not exceed 7 characters</exception>
 		public Vehicle(string licenseplate)
 		{
 			if (licenseplate.Length > 7)
@@ -33,7 +31,6 @@ namespace Bridge
 			}
 			Licenseplate = licenseplate;
 		}
-
 		#endregion
 
 		#region Methods

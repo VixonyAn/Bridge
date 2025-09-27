@@ -1,6 +1,6 @@
-﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+﻿using Bridge;
 
-namespace Bridge
+namespace StoreBaeltTicketLibrary
 {
     public class StoreBaeltCar : Car
 	{
