@@ -4,14 +4,40 @@ namespace StoreBaeltTicketLibrary
 {
     public class StoreBaeltCar : Car
 	{
+		#region Properties
+		/// <summary>
+		/// A date, used for time based functions like weekend discounts
+		/// </summary>
 		public DayOfWeek Weekday { get; set; }
+		/// <summary>
+		/// The variable TicketPrice is used in this class to account for math done in the Price method
+		/// </summary>
 		public double TicketPrice { get; set; }
+		#endregion
 
+		#region Constructors
+		/// <summary>
+		/// An empty constructor for creating a Storebaelt Car
+		/// </summary>
 		public StoreBaeltCar() { }
+		/// <summary>
+		/// A constructor for creating a Storebaelt Car requiring a DayOfWeek to determine the weekend discount
+		/// </summary>
+		/// <param name="weekday">DayOfWeek</param>
 		public StoreBaeltCar(DayOfWeek weekday)
 		{
 			Weekday = weekday;
 		}
+		/// <summary>
+		/// A constructor for creating a Storebaelt Car requiring a licenseplate and DayOfWeek to determine the weekend discount
+		/// </summary>
+		/// <param name="weekday">DayOfWeek</param>
+		public StoreBaeltCar(DayOfWeek weekday, string licenseplate) : base(licenseplate)
+		{
+			Weekday = weekday;
+			Licenseplate = licenseplate;
+		}
+		#endregion
 
 		/// <summary>
 		/// A method that determines and processes discounts to calculate the price to cross the bridge
