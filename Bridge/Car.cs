@@ -2,17 +2,6 @@
 {
     public class Car : Vehicle
 	{
-		#region Properties
-		/// <summary>
-		/// A string of numbers and letters that make up a liscenseplate
-		/// </summary>
-		public string Licenseplate { get; set; }
-        /// <summary>
-        /// A date and time, used for time based functions like weekend discounts
-        /// </summary>
-        public DateTime Date { get; set; }
-		#endregion
-
 		#region Constructors
 		/// <summary>
 		/// An empty constructor for creating a Car
